@@ -5,10 +5,10 @@
     # dir: opt/docker
   tasks:
     - name: Create docker image using war file
-      command: 'docker build -t coderdevops/abc-service:latest .'
+      command: 'docker build -t coderdevops123/abc-service:latest .'
      # let's add code to run a container
     - name: Push Docker Image to Dockerhub
-      command: 'docker push coderdevops/abc-service:latest'
+      command: 'docker push coderdevops123/abc-service:latest'
     - name: Removing image from ansible workspace
-      command: 'docker rmi coderdevops/abc-service:latest'
+      command: 'docker rmi coderdevops123/abc-service:latest'
       ignore_errors: yes
