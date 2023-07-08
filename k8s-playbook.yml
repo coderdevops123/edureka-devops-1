@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: create a deployment
+    command: "kubectl apply -f k8s.yml"
